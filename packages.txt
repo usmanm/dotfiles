@@ -1,0 +1,6 @@
+curl
+emacs
+git
+pyflakes
+python-pip
+xclip

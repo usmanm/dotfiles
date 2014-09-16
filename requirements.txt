@@ -1,0 +1,6 @@
+flake8>=2.2.3
+ipython>=2.2.0
+path.py>=5.2
+python-dateutil>=2.2
+requests>=2.4.1
+sh>=1.09
