@@ -153,3 +153,6 @@ export SPARK_HOME=/home/usmanm/spark-1.1.0
 
 # Add JAVA_HOME (for Oracle Java 8)
 export JAVA_HOME=/usr
+
+# Page console output that doesn't fit in less.
+export PAGER="less -S"
