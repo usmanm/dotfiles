@@ -152,4 +152,4 @@ export PATH=$PATH:/home/usmanm/pdb/bin
 export SPARK_HOME=/home/usmanm/spark-1.1.0
 
 # Add JAVA_HOME (for Oracle Java 8)
-export JAVA_HOME=/usr/bin
+export JAVA_HOME=/usr
