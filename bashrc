@@ -147,3 +147,9 @@ export PS1="\u@\h:\[$YELLOW\]\w \[$GREEN\]\$git_branch\[$RED\]\$git_dirty\[$RESE
 
 # Add PipelineDB to PATH.
 export PATH=$PATH:/home/usmanm/pdb/bin
+
+# Add SPARK_HOME
+export SPARK_HOME=/home/usmanm/spark-1.1.0
+
+# Add JAVA_HOME (for Oracle Java 8)
+export JAVA_HOME=/usr/bin
