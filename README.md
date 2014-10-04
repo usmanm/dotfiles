@@ -8,4 +8,4 @@ Miscellaneous dotfiles for my Ubuntu environment
 curl https://raw.githubusercontent.com/usmanm/dotfiles/master/install.sh | bash
 ```
 
-**Warning:** The installer will mercilessly overwrite everything.
+**Warning:** The installer will overwrite everything.
