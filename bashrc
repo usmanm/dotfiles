@@ -156,3 +156,8 @@ export JAVA_HOME=/usr
 
 # Page console output that doesn't fit in less.
 export PAGER="less -S"
+
+# Add go to PATH
+export PATH=$PATH:/usr/local/go/bin
+export GOPATH=/home/usmanm/go
+export PATH=$PATH:$GOPATH/bin

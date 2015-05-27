@@ -85,3 +85,9 @@
   '(flymake-errline ((((class color)) (:background "Brown"))))
   '(flymake-warnline ((((class color)) (:background "Brown")))))
 ;; (setq flymake-log-level 3)
+
+;; Autopair brackets etc.
+(require 'autopair)
+(autopair-global-mode 1)
+(setq autopair-autowrap t)
+(put 'upcase-region 'disabled nil)
