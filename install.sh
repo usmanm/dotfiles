@@ -2,10 +2,6 @@
 
 set -ux
 
-# Install packages I can't live without.
-cat packages.txt | xargs sudo apt-get -y install
-sudo pip install -r requirements.txt
-
 cd
 if [ ! -d dotfiles ] ; then
   git clone git@github.com:usmanm/dotfiles.git
@@ -13,6 +9,10 @@ fi
 
 cd dotfiles
 git pull origin master
+
+# Install packages I can't live without.
+cat packages.txt | xargs sudo apt-get -y install
+sudo pip install -r requirements.txt
 
 # Copy over dotfiles to your home directory.
 ln -f -s `pwd`/bashrc ~/.bashrc
