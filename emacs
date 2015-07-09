@@ -1,4 +1,4 @@
-(add-to-list 'load-path "~/.emacs.d")
+;; (add-to-list 'load-path "~/.emacs.d")
 
 ;; (require 'lambda-mode)
 ;; (add-hook 'python-mode-hook #'lambda-mode 1)
@@ -101,3 +101,6 @@
   kept-old-versions 5    ; and how many of the old
   )
 (put 'downcase-region 'disabled nil)
+
+;; Disable flymake for XML/HTML
+(defun flymake-xml-init ())
