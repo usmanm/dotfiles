@@ -6,7 +6,7 @@
 ;; (setq lambda-symbol (string (make-char 'greek-iso8859-7 107)))
 
 ;; Delete trailing white space.
-(add-hook 'before-save-hook 'delete-trailing-whitespace)
+;; (add-hook 'before-save-hook 'delete-trailing-whitespace)
 
 ;; Auto-tabbing when going to next line.
 (add-hook 'python-mode-hook '(lambda ()
@@ -91,3 +91,13 @@
 (autopair-global-mode 1)
 (setq autopair-autowrap t)
 (put 'upcase-region 'disabled nil)
+
+;; Keep backup files in a different directory
+(setq backup-directory-alist '(("." . "~/.emacs.d/backup"))
+  backup-by-copying t    ; Don't delink hardlinks
+  version-control t      ; Use version numbers on backups
+  delete-old-versions t  ; Automatically delete excess backups
+  kept-new-versions 20   ; how many of the newest versions to keep
+  kept-old-versions 5    ; and how many of the old
+  )
+(put 'downcase-region 'disabled nil)
