@@ -6,7 +6,7 @@
 ;; (setq lambda-symbol (string (make-char 'greek-iso8859-7 107)))
 
 ;; Delete trailing white space.
-;; (add-hook 'before-save-hook 'delete-trailing-whitespace)
+(add-hook 'before-save-hook 'delete-trailing-whitespace)
 
 ;; Auto-tabbing when going to next line.
 (add-hook 'python-mode-hook '(lambda ()
@@ -87,10 +87,10 @@
 ;; (setq flymake-log-level 3)
 
 ;; Autopair brackets etc.
-(require 'autopair)
-(autopair-global-mode 1)
-(setq autopair-autowrap t)
-(put 'upcase-region 'disabled nil)
+;;(require 'autopair)
+;;(autopair-global-mode 1)
+;;(setq autopair-autowrap t)
+;;(put 'upcase-region 'disabled nil)
 
 ;; Keep backup files in a different directory
 (setq backup-directory-alist '(("." . "~/.emacs.d/backup"))
