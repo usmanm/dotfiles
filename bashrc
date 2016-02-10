@@ -146,7 +146,7 @@ PROMPT_COMMAND="find_git_branch; find_git_dirty; $PROMPT_COMMAND"
 export PS1="\u@\h:\[$YELLOW\]\w \[$GREEN\]\$git_branch\[$RED\]\$git_dirty\[$RESET\]\$ "
 
 # Add PipelineDB to PATH.
-export PATH=$PATH:/home/usmanm/pdb/bin
+export PATH=/home/usmanm/pdb/bin:$PATH
 
 # Add SPARK_HOME
 export SPARK_HOME=/home/usmanm/spark-1.1.0
